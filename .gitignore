@@ -1,0 +1,33 @@
+# Local environment
+.env
+.env.*
+*.env.local
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Node / build
+node_modules/
+dist/
+.turbo/
+.vite/
+
+# Rust / Tauri
+target/
+src-tauri/target/
+src-tauri/gen/
+
+# Secrets (never commit)
+secrets/*.dpapi.json
+secrets/*.gpg
+
+# App-local auth/session state
+intent-to-software/.localai/
+
+# Pipeline artifacts + generated output (never commit)
+intent-to-software/output/
+intent-to-software/*.txt
+intent-to-software/*.html
+intent-to-software/*.json

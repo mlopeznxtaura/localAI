@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(netsh *)",
+      "Bash(curl *)"
+    ]
+  },
+  "$version": 3
+}
