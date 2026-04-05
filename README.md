@@ -26,7 +26,7 @@ npm run tauri dev
 ```
 
 Flow:
-1) Connect GitHub (Device Flow) — required so exports go to *the user's* GitHub account
+1) Connect GitHub (Device Flow) — required (so exports go to the user's GitHub account)
 2) Paste a prompt and click **Build**
 3) Open the generated output folder, or export to GitHub
 
@@ -34,10 +34,17 @@ Requirements for export:
 - `gh` CLI installed and available in PATH
 - `git` installed and available in PATH
 
+GitHub behavior:
+- Export writes to the currently authenticated user's GitHub account.
+- Repos can be public or private.
+- Default repo name is auto-suggested from the prompt/intent (slugified).
+- Device-flow token is stored locally (gitignored) under `intent-to-software/.localai/`.
+
 ## Where files go
 
 - Generated project: `intent-to-software/output/`
 - Build metadata: `intent-to-software/output/build_manifest.json`
+- Step 6 rolling context: `intent-to-software/output/PROJECT_CONTEXT.md`
 - Last UI/backend error: `intent-to-software/ui_last_error.txt`
 
 ## Headless pipeline (no UI)
@@ -47,3 +54,4 @@ cd /mnt/d/NextAura/projects2/localAI/intent-to-software
 . .venv/bin/activate
 python run.py
 ```
+
