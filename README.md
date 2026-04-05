@@ -42,7 +42,8 @@ GitHub behavior:
 
 ## Where files go
 
-- Generated project: `intent-to-software/output/`
+- Generated project (local): `intent-to-software/output/`
+- GitHub export: only happens when the user clicks **Export** in the UI (after connecting GitHub). The repo is created and pushed to the **currently authenticated user's** GitHub account.
 - Build metadata: `intent-to-software/output/build_manifest.json`
 - Step 6 rolling context: `intent-to-software/output/PROJECT_CONTEXT.md`
 - Last UI/backend error: `intent-to-software/ui_last_error.txt`
@@ -54,4 +55,3 @@ cd /mnt/d/NextAura/projects2/localAI/intent-to-software
 . .venv/bin/activate
 python run.py
 ```
-
