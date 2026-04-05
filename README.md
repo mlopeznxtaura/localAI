@@ -30,6 +30,10 @@ Flow:
 2) Paste a prompt and click **Build**
 3) Open the generated output folder, or export to GitHub
 
+Requirements for export:
+- `gh` CLI installed and available in PATH
+- `git` installed and available in PATH
+
 ## Where files go
 
 - Generated project: `intent-to-software/output/`
@@ -43,4 +47,3 @@ cd /mnt/d/NextAura/projects2/localAI/intent-to-software
 . .venv/bin/activate
 python run.py
 ```
-
