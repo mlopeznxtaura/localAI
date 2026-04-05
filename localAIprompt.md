@@ -51,7 +51,7 @@ step5_tasks.py → tasks.json + tests.json
 ↓
 step6_build.py → /output/ (the actual software)
 ↓
-step7_ui/ → Tauri app (the control surface)
+localAI-app/ → Tauri app (the control surface)
 
 
 Step 1: Prompt Compression

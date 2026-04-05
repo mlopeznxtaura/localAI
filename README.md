@@ -8,7 +8,7 @@ That constraint **is the architecture**.
 ## Repo layout
 
 - `intent-to-software/`: 6-step stateless pipeline (engine)
-- `step7_ui/`: Tauri desktop UI (submission/demo surface)
+- `localAI-app/`: Tauri desktop UI (submission/demo surface)
 
 ## Run the UI (WSL)
 
@@ -20,7 +20,7 @@ Prereqs:
 cd /mnt/d/NextAura/projects2/localAI/intent-to-software
 bash ./bootstrap_venv.sh
 
-cd /mnt/d/NextAura/projects2/localAI/step7_ui
+cd /mnt/d/NextAura/projects2/localAI/localAI-app
 npm install
 npm run tauri dev
 ```

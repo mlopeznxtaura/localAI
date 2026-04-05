@@ -5,7 +5,7 @@
 Local-first software generation:
 
 - `intent-to-software/` is the 6-step stateless pipeline (engine)
-- `step7_ui/` is the Tauri desktop UI (demo/submission surface)
+- `localAI-app/` is the Tauri desktop UI (demo/submission surface)
 
 ## Non-negotiables
 
